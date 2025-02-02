@@ -1,0 +1,17 @@
+.agregar-op {
+  display: none;
+  width: 315px;
+  margin: 10px 0;
+  padding: 15px;
+  padding-top: 0;
+  border: 1px solid #000000;
+}
+.agregar-op.active {
+  display: block;
+}
+
+.input-op {
+  display: block;
+  width: 295px;
+  margin-bottom: 0px;
+}
