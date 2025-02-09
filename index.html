@@ -7,22 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button class="btn-agregar-op">+</button>
-  <div class="agregar-op">
-    <button class="cerrar">X</button>
-    <p>Agregar una orden de producción</p>
-    <label for="">Articulo:</label>
-    <input type="text" name="articulo" id="articulo" class="input-op"><br>
-    <label for="">Inicio:</label>
-    <input type="date" name="inicio" id="inicio" class="input-op"><br>
-    <label for="">Cantidad:</label>
-    <input type="number" name="cantidad" id="cantidad" class="input-op"><br>
-    <label for="">Partida:</label>
-    <input type="number" name="partida" id="partida" class="input-op"><br>
-    <label for="">Lote:</label>
-    <input type="number" name="lote" id="lote" class="input-op"><br>
-    <button class="grabar">Grabar</button>
+  <div class="main-container">
+      <h1>Ordenes de Producción</h1>
+    <button class="btn-agregar-op">+</button>
+    <table class="tabla-op">
+      <tr>
+        <th class="th-articulo">Articulo</th>
+        <th>Inicio</th>
+        <th>Cantidad</th>
+        <th>Partida</th>
+        <th>Lote</th>
+      </tr>
+
+    </table>
+    <div class="agregar-op">
+      <button class="cerrar">X</button>
+      <p>Agregar una orden de producción</p>
+      <label for="">Articulo:</label>
+      <input list="articulos" name="articulo" id="articulo" class="input-op">
+      <datalist id="articulos">
+        <option value="BE1001 - Batido Provenzal Baja Sal">
+        <option value="BE1002 - Batido Provenzal">
+        <option value="BM0979 - Batido Masajeo Pollo">
+        <option value="BM1010 - Batido Masajeo Vacuno">
+        <option value="REB1031 - Rebozador Compuesto">
+      </datalist><br>
+      <label for="">Inicio:</label>
+      <input type="date" name="inicio" id="inicio" class="input-op"><br>
+      <label for="">Cantidad:</label>
+      <input type="number" name="cantidad" id="cantidad" class="input-op"><br>
+      <label for="">Partida:</label>
+      <input type="number" name="partida" id="partida" class="input-op"><br>
+      <label for="">Lote:</label>
+      <input type="number" name="lote" id="lote" class="input-op"><br>
+      <button class="grabar">Grabar</button>
+    </div>
   </div>
+  
 
 
   <script src="./main.js"></script>
